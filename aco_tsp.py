@@ -166,9 +166,9 @@ if __name__ == '__main__':
     choice = int(input("Enter your choice(1 or 2)\n1. Berlin52: 52 locations in the city of Berlin\n2. kroA100: 100 locations of a city (used for performance testing)\n"))
 
     if choice == 1:
-        inp = open("C:\\Users\\suchi\\Downloads\\potential_1\\berlin52.tsp", "r")
+        inp = open("datasets/berlin52.tsp", "r")
     if choice == 2:
-        inp = open("C:\\Users\\suchi\\Downloads\\potential_1\\kroA100.tsp", "r")
+        inp = open("datasets/kroA100.tsp", "r")
 
     _nodes = [(float(line.split(" ")[1]), float(line.split(" ")[2]))for i, line in enumerate(inp) if line != "EOF\n" and i > 5 and line != "\n"]
 
